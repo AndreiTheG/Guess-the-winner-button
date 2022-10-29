@@ -1,0 +1,17 @@
+body {
+    background-color: red;
+}
+
+.card {
+    font-size: 20px;
+    width: 1000px;
+    text-align: center;
+    background-color: yellowgreen;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+input {
+    width: 50px;
+}
