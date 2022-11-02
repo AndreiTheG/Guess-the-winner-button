@@ -3,7 +3,7 @@ function button() {
     document.getElementById('sentence').innerHTML = 'Choose the winner button!'
     for (let i = 0; i < numButtons; i++) {
         document.getElementById('button').innerHTML += '<button id="button' + (i + 1) +'" type="button"' 
-        + 'class="btn btn-primary" onclick="answer(2); disableBtn()">Button ' + (i + 1) + '</button> ';
+        + 'class="btn btn-primary" onclick="answer(2)">Button ' + (i + 1) + '</button> ';
     }
     document.getElementById('submit').disabled = true;
 }
