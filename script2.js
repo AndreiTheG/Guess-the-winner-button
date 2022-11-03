@@ -22,11 +22,5 @@ function answer(value) {
     } else {
         document.getElementById('ans').innerHTML = '<br>Wrong button! Try again!';
     }
-    /*let ans = Math.floor(Math.random() * max);
-    if (ans == 1) {
-        document.getElementById('ans').innerHTML = '<br>Congrats! You won!';
-    } else if (ans == 0) {
-        document.getElementById('ans').innerHTML = '<br>Wrong button! Try again!';
-    }*/
     disableBtn();
 }
