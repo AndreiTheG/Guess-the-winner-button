@@ -17,7 +17,7 @@ function disableBtn() {
 
 function answer(max) {
     let numButtons = document.getElementById('button').value;
-    console.log(numButtons);
+    alert(numButtons);
     let ans = Math.floor(Math.random() * max);
     if (ans == 1) {
         document.getElementById('ans').innerHTML = '<br>Congrats! You won!';
