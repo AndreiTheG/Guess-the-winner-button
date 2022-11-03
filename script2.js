@@ -15,7 +15,7 @@ function disableBtn() {
     }
 }
 
-function answer(max) {
+function answer() {
     let numButtons = document.querySelector('input').value;
     let winnerButton = 2, isWinnerButton = false;
     for (let i = 0; i < numButtons; i++) {
