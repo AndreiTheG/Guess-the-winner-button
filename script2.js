@@ -26,7 +26,7 @@ function answer() {
         }
     }
     if (isWinnerButton == false) {
-        document.getElementById('ans').innerHTML = '<br>Congrats! You won!';
+        document.getElementById('ans').innerHTML = '<br>Wrong button! Try again!';
     }
     /*let ans = Math.floor(Math.random() * max);
     if (ans == 1) {
