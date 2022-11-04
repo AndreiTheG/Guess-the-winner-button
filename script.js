@@ -5,19 +5,34 @@ function lock() {
 }
 
 function firstButton() {
-    document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
+    let numButton = 1, winnerButton = Math.floor(Math.random() * 3 + 1);
+    if (numButton == winnerButton) {
+        document.getElementById('output').innerHTML = '<br> Congrats! You won!';
+    } else {
+        document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
+    }
     lock();
     console.log('The code is working!');
 }
 
 function secondButton() {
-    document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';
+    let numButton = 2, winnerButton = Math.floor(Math.random() * 3 + 1);
+    if (numButton == winnerButton) {
+        document.getElementById('output').innerHTML = '<br> Congrats! You won!';
+    } else {
+        document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
+    }
     lock();
     console.log('The code is working!');   
 }
 
 function thirdButton() {
-    document.getElementById('output').innerHTML = '<br> Congrats! You won!';
+    let numButton = 3, winnerButton = Math.floor(Math.random() * 3 + 1);
+    if (numButton == winnerButton) {
+        document.getElementById('output').innerHTML = '<br> Congrats! You won!';
+    } else {
+        document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
+    }
     lock();
     console.log('The code is working!');
 }
