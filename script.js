@@ -6,7 +6,11 @@ function lock() {
 
 function answer(value) {
     let winnerNum = Math.floor(Math.random * 3 + 1);
-    document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
+    if (value == winnerButton) {
+        document.getElementById('output').innerHTML = '<br> Congrats! You won!';   
+    } else {
+        document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
+    }
     lock();
     console.log('The code is working!');
 }
