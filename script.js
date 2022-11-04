@@ -6,7 +6,7 @@ function lock() {
 
 function answer(value) {
     let winnerNum = Math.floor(Math.random * 3 + 1);
-    if (value == winnerButton) {
+    if (value == winnerNum) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';   
     } else {
         document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
