@@ -16,7 +16,9 @@ function disableBtn() {
 }
 
 function answer(value) {
-    let winnerButton = 2;
+    let numButtons = document.querySelector('input').value;
+    //randomise choose the winner button
+    let winnerButton = Math.floor(Math.random() * numButtons + 1);
     if (value == winnerButton) {
         document.getElementById('ans').innerHTML = '<br>Congrats! You won!';
     } else {
