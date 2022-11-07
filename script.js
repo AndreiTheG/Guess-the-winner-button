@@ -4,8 +4,13 @@ function lock() {
     document.getElementById('button3').setAttribute("disabled", "");
 }
 
+function randomWinnerButton() {
+    let winnerButton = Math.floor(Math.random() * 3 + 1);
+    return winnerButton;
+}
+
 function firstButton() {
-    let numButton = 1, winnerButton = Math.floor(Math.random() * 3 + 1);
+    let numButton = 1, winnerButton = randomWinnerButton();
     if (numButton == winnerButton) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
     } else {
@@ -16,7 +21,7 @@ function firstButton() {
 }
 
 function secondButton() {
-    let numButton = 2, winnerButton = Math.floor(Math.random() * 3 + 1);
+    let numButton = 2, winnerButton = randomWinnerButton();
     if (numButton == winnerButton) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
     } else {
@@ -27,7 +32,7 @@ function secondButton() {
 }
 
 function thirdButton() {
-    let numButton = 3, winnerButton = Math.floor(Math.random() * 3 + 1);
+    let numButton = 3, winnerButton = randomWinnerButton();
     if (numButton == winnerButton) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
     } else {
