@@ -9,6 +9,7 @@ function randomWinnerButton() {
 
 function answer() {
     let firstButton = 1, secButton = 2, thirdButton = 3, winnerButton = randomWinnerButton();
+    console.log(winnerButton);
     if (winnerButton == firstButton) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
     } else if (winnerButton == secButton) {
