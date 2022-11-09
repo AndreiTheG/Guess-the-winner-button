@@ -12,11 +12,7 @@ function randomWinnerButton() {
 function answer() {
     let firstButton = 1, secButton = 2, thirdButton = 3, winnerButton = randomWinnerButton();
     console.log(winnerButton);
-    if (winnerButton == firstButton) {
-        document.getElementById('output').innerHTML = '<br> Congrats! You won!';
-    } else if (winnerButton == secButton) {
-        document.getElementById('output').innerHTML = '<br> Congrats! You won!';
-    } else if (winnerButton == thirdButton) {
+    if (winnerButton == firstButton || winnerButton == secButton || winnerButton == thirdButton) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
     } else {
         document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
