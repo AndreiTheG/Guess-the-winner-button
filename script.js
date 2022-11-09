@@ -6,7 +6,7 @@ function lock() {
 
 function button() {
     for (let i = 0; i < 3; ++i) {
-        document.getElementById()
+        document.getElementById('buttons').innerHTML = '<button id="button"' + i + 1 + '"" onclick="answer(' + i + 1 + ')">Button ' + i + 1 +'</button>'
     }
 }
 
@@ -15,14 +15,10 @@ function randomWinnerButton() {
     return winnerButton;
 }
 
-function answer() {
+function answer(numButton) {
     let winnerButton = randomWinnerButton();
     console.log(winnerButton);
-    if (winnerButton == 'button1') {
-        document.getElementById('output').innerHTML = '<br> Congrats! You won!';
-    } else if (winnerButton == 'button2') {
-        document.getElementById('output').innerHTML = '<br> Congrats! You won!';
-    } else if (winnerButton == 'button3') {
+    if (numButton == winnerButton) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
     } else {
         document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
