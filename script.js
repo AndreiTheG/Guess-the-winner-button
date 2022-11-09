@@ -4,7 +4,7 @@ function lock() {
     document.getElementById('button3').disabled = true;
 }
 function randomWinnerButton() {
-    let winnerButton = 'button' + Math.floor(Math.random() * 3 + 1);
+    let winnerButton = Math.floor(Math.random() * 3 + 1);
     return winnerButton;
 }
 
