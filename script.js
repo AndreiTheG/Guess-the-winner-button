@@ -5,14 +5,14 @@ function lock() {
 }
 
 function randomWinnerButton() {
-    let winnerButton = Math.floor(Math.random() * 3 + 1);
+    let winnerButton = 'button' + Math.floor(Math.random() * 3 + 1);
     return winnerButton;
 }
 
 function answer() {
     let firstButton = 1, secButton = 2, thirdButton = 3, winnerButton = randomWinnerButton();
     console.log(winnerButton);
-    if (winnerButton == firstButton && winnerButton != secButton && winnerButton != thirdButton) {
+    /*if (winnerButton == firstButton && winnerButton != secButton && winnerButton != thirdButton) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
     } else if (winnerButton != firstButton && winnerButton == secButton && winnerButton != thirdButton) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
@@ -20,7 +20,7 @@ function answer() {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
     } else {
         document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
-    }
+    }*/
     lock();
     console.log('The code is working!');
 }
