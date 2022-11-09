@@ -4,6 +4,12 @@ function lock() {
     document.getElementById('button3').disabled = true;
 }
 
+function button() {
+    for (let i = 0; i < 3; ++i) {
+        document.getElementById()
+    }
+}
+
 function randomWinnerButton() {
     let winnerButton = 'button' + Math.floor(Math.random() * 3 + 1);
     return winnerButton;
