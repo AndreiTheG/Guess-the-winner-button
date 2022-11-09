@@ -1,7 +1,5 @@
 function lock() {
-    document.getElementById('button1').setAttribute("disabled", "");
-    document.getElementById('button2').setAttribute("disabled", "");
-    document.getElementById('button3').setAttribute("disabled", "");
+    document.getElementById('answer').setAttribute("disabled", "");
 }
 
 function randomWinnerButton() {
@@ -9,31 +7,13 @@ function randomWinnerButton() {
     return winnerButton;
 }
 
-function firstButton() {
-    let numButton = 1, winnerButton = randomWinnerButton();
-    if (numButton == winnerButton) {
+function answer() {
+    let firstButton = 1, secButton = 2, thirdButton = 3, winnerButton = randomWinnerButton();
+    if (winnerButton == firstButton) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
-    } else {
-        document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
-    }
-    lock();
-    console.log('The code is working!');
-}
-
-function secondButton() {
-    let numButton = 2, winnerButton = randomWinnerButton();
-    if (numButton == winnerButton) {
+    } else if (winnerButton == secButton) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
-    } else {
-        document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
-    }
-    lock();
-    console.log('The code is working!');   
-}
-
-function thirdButton() {
-    let numButton = 3, winnerButton = randomWinnerButton();
-    if (numButton == winnerButton) {
+    } else if (winnerButton == thirdButton) {
         document.getElementById('output').innerHTML = '<br> Congrats! You won!';
     } else {
         document.getElementById('output').innerHTML = '<br> Wrong button! Try again!';   
