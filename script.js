@@ -1,5 +1,7 @@
 function lock() {
-    document.getElementById('answer').disabled = true;
+    document.getElementById('button1').disabled = true;
+    document.getElementById('button2').disabled = true;
+    document.getElementById('button3').disabled = true;
 }
 
 function randomWinnerButton() {
